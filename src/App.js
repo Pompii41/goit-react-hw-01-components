@@ -1,10 +1,10 @@
 import React from "react"; 
 import user from './jsons/user.json';
-import UserProfile from "./components/Profile"
-import Statistic from "./components/Statistic"
-import statisticalData from './jsons/statistical-data.json';
+import UserProfile from "./components/Profile/Profile";
+import Statistics from "./components/statistic/Statistics";
+import statistical from './jsons/statistic.json';
 import FriendList from "./components/FriendList/FriendList";
-import friends from "./jsons/friends.json";
+import friendslist from "./jsons/friends.json";
 import transaction from './jsons/transactions.json';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
@@ -25,8 +25,8 @@ import TransactionHistory from './components/TransactionHistory/TransactionHisto
                 avatar={user.avatar}
                 stats={user.stats}
             />
-         <Statistic statisticsList={statisticalData} />
-      <FriendList friends={friends} />
+         <Statistics title="Upload stats" stats={statistical} />
+     <FriendList list={friendslist} />
         <TransactionHistory transactionList={transaction} />
         </>
   );

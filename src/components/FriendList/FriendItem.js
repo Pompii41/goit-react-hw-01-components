@@ -1,37 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types'; 
-import defaultUserImage from './default-user.png';
-import styled from "styled-components"
+import { Spanvalue,Li } from "../../StyledComponents"
 
 
 
-const Spanvalue = styled.span`{
- width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	margin-right: 20px;
+
+
+
+
+
+
+function FriendItem( { avatar, name, isOnline } ) {
 	
-  background : ${props => props.isOnline? 'green'  : 'red'};
-}`;
-
-
-
-
-const FriendItem = ({ friendItem }) => {
-
 	return (
-		<>
-			<Spanvalue isOnline={friendItem.isOnline}> </Spanvalue>
-			<img  src={friendItem.avatar} alt="friend avatar" width="48" />
-			<p >{friendItem.name}</p>
-		</>
-	)
-};
+		<Li>
+			<Spanvalue isOnline={isOnline}> </Spanvalue>
+			<img src={avatar} alt="friend avatar" width="48" />
+			<p>{name}</p>
+		</Li>
 
-
-FriendItem.defaultProps = {
-	avatar: defaultUserImage,
+	);
 }
+
+
+
 
 FriendItem.propTypes = {
 	friendItem: PropTypes.shape({

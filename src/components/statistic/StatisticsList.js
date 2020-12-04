@@ -1,21 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
 
-import {Lishka} from '../../StyledComponents';
+import { Lishka } from '../../StyledComponents';
 
-
-
-function StatisticsList({ label, percentage,color }) {
+function StatisticsList({ label, percentage, color }) {
   return (
-    <Lishka  style={{ backgroundColor: `${color}` }}>
-      <span >{label}</span>
-      <span >{percentage}</span>
+    <Lishka style={{ backgroundColor: `${color}` }}>
+      <span>{label}</span>
+      <span>{percentage}</span>
     </Lishka>
   );
 }
 
 export default StatisticsList;
-
 
 StatisticsList.propTypes = {
   label: PropTypes.string,

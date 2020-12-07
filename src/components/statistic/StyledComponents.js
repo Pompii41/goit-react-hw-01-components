@@ -1,29 +1,31 @@
+import styled from 'styled-components';
 
-import styled from "styled-components"
+export const sectionStatistic = styled.section`
+   {
+    font-size: 1em;
+    width: 512px;
+    margin: 50px;
+    font-family: sans-serif;
+    color: rgba(115, 111, 111, 1);
+  }
+`;
 
+export const headerStatic = styled.h2`
+   {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+`;
 
-
-
-export const sectionStatistic = styled.section`{
-	font-size: 1em;
-	width: 512px;
-	margin: 50px;
-	font-family: sans-serif;
-	color: rgba(115, 111, 111, 1);
-}`
-
-export const headerStatic = styled.h2`{
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 1em;
-}`
-
-export const UlStatistic = styled.ul`{
-	display: flex;
-	justify-content: left;
-	color: rgba(255, 255, 255, 1);
-	flex-wrap: wrap;
-}`
+export const UlStatistic = styled.ul`
+   {
+    display: flex;
+    justify-content: left;
+    color: rgba(255, 255, 255, 1);
+    flex-wrap: wrap;
+  }
+`;
 
 export const Lishka = styled.li`{
 	width:75px;
@@ -37,5 +39,4 @@ export const Lishka = styled.li`{
 	&:hover{
   color:blue;
   transition-duration: .5s ; 
-}`
-
+}`;

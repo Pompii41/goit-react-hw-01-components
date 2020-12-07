@@ -1,13 +1,11 @@
-
-import { UlStatistic } from "../../StyledComponents"
-import React from "react";
-import StatisticsList from "./StatisticsList";
+import { UlStatistic } from '../../StyledComponents';
+import React from 'react';
+import StatisticsList from './StatisticsList';
 import PropTypes from 'prop-types';
 
-
-export default function Statistics({ stats}) {
-    return (
-    <UlStatistic >
+export default function Statistics({ stats }) {
+  return (
+    <UlStatistic>
       {stats.map(item => {
         return (
           <StatisticsList
